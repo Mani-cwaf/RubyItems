@@ -1,0 +1,19 @@
+{
+  "itemGroup.TabRuby": "Ruby Items",
+  "item.ruby_items.ruby": "Ruby",
+  "item.ruby_items.ruby_matter_core": "Ruby Matter Core",
+  "item.ruby_items.ruby_crafter": "Ruby Crafter",
+  "item.ruby_items.ruby_apple": "Ruby Apple",
+  "block.ruby_items.ruby_block": "Block of Ruby",
+  "block.ruby_items.ruby_ore": "Ruby Ore",
+  "block.ruby_items.nether_ruby_ore": "Nether Ruby Ore",
+  "item.ruby_items.ruby_sword": "Ruby Sword",
+  "item.ruby_items.ruby_pickaxe": "Ruby Pickaxe",
+  "item.ruby_items.ruby_shovel": "Ruby Shovel",
+  "item.ruby_items.ruby_axe": "Ruby Axe",
+  "item.ruby_items.ruby_hoe": "Ruby Hoe",
+  "item.ruby_items.ruby_helmet": "Ruby Helmet",
+  "item.ruby_items.ruby_chestplate": "Ruby Chestplate",
+  "item.ruby_items.ruby_leggings": "Ruby Leggings",
+  "item.ruby_items.ruby_boots": "Ruby Boots"
+}

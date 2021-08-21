@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ruby_items:ruby_crafter"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result":
+  {
+    "item": "ruby_items:ruby",
+    "count": 1
+  }
+}
