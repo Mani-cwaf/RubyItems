@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    RUBY("tutorial:ruby", 50, new int[]{4, 10, 12, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, () -> {
+    RUBY("ruby_items:ruby", 50, new int[]{4, 10, 12, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, () -> {
         return Ingredient.fromItems(new IItemProvider[]{(IItemProvider)RegistryHandler.RUBY.get()});
     }, 0.0F);
 

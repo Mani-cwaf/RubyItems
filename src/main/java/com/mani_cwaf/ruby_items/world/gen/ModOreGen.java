@@ -19,7 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
 @EventBusSubscriber(
-        modid = "tutorial",
+        modid = "ruby_items",
         bus = Bus.MOD
 )
 public class ModOreGen {

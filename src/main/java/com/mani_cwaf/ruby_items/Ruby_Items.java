@@ -12,11 +12,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("tutorial")
+@Mod("ruby_items")
 public class Ruby_Items {
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "tutorial";
-    public static final ItemGroup TAB_RUBY = new ItemGroup("TutorialTabRuby") {
+    public static final String MOD_ID = "ruby_items";
+    public static final ItemGroup TAB_RUBY = new ItemGroup("TabRuby") {
         public ItemStack createIcon() {
             return new ItemStack((IItemProvider)RegistryHandler.RUBY.get());
         }

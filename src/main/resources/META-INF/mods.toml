@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/Mani-cwaf/Ruby-Items-1.16.1-1.0.0" #optional
 
 [[mods]] #mandatory
 
-modId="tutorial" #mandatory
+modId="ruby_items" #mandatory
 
 version="1.16.1-1.0.0" #mandatory
 

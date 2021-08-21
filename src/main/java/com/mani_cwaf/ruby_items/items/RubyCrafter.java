@@ -1,7 +1,6 @@
 package com.mani_cwaf.ruby_items.items;
 
 import com.mani_cwaf.ruby_items.Ruby_Items;
-import com.mani_cwaf.ruby_items.util.RegistryHandler;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
