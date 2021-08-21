@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "rrr",
+    "r r",
+    "   "
+  ],
+  "key":
+  {
+    "r":
+    {
+      "item": "tutorial:ruby"
+    }
+  },
+  "result":
+  {
+    "item": "tutorial:ruby_helmet",
+    "count": 1
+  }
+}

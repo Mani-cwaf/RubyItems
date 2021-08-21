@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorial:ruby_crafter"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result":
+  {
+    "item": "tutorial:ruby",
+    "count": 1
+  }
+}

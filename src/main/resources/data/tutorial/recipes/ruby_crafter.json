@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " r ",
+    "rcr",
+    " r "
+  ],
+  "key":
+  {
+    "r":
+    {
+      "item": "tutorial:ruby_block"
+    },
+    "c":
+    {
+      "item": "tutorial:ruby_matter_core"
+    }
+  },
+  "result":
+  {
+    "item": "tutorial:ruby_crafter",
+    "count": 1
+  }
+}

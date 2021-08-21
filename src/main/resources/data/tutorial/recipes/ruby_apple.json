@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "rrr",
+    "rar",
+    "rrr"
+  ],
+  "key":
+  {
+    "r":
+    {
+      "item": "tutorial:ruby"
+    },
+    "a":
+    {
+      "item": "minecraft:apple"
+    }
+  },
+  "result":
+  {
+    "item": "tutorial:ruby_apple",
+    "count": 1
+  }
+}
