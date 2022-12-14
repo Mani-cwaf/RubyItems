@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "rubyitems:block/ruby_enrichment_station"
+        },
+        "facing=south": {
+            "model": "rubyitems:block/ruby_enrichment_station",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "rubyitems:block/ruby_enrichment_station",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "rubyitems:block/ruby_enrichment_station",
+            "y": 90
+        }
+    }
+}

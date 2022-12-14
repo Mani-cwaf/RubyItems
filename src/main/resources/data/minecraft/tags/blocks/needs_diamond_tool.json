@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "rubyitems:ruby_enrichment_station",
+        "rubyitems:ruby_block",
+        "rubyitems:ruby_ore",
+        "rubyitems:deepslate_ruby_ore",
+        "rubyitems:nether_ruby_ore",
+        "rubyitems:end_ruby_ore"
+    ]
+}

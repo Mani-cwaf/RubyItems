@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "ruby_items:items/ruby_pickaxe"
-  }
-}

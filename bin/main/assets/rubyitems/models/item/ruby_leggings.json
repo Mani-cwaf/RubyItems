@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "rubyitems:item/ruby_leggings"
+    }
+}

@@ -1,0 +1,187 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2022-12-13 22:30:21
+Description: Rendering screen
+
+java.lang.RuntimeException: Slot 2 not in valid range - [0,2)
+	at net.minecraftforge.items.ItemStackHandler.validateSlotIndex(ItemStackHandler.java:206) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.items.ItemStackHandler.getStackInSlot(ItemStackHandler.java:58) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.items.SlotItemHandler.getItem(SlotItemHandler.java:40) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderSlot(AbstractContainerScreen.java:202) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:108) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ManiDev.RubyItems.block.screen.RubyEnrichmentStationScreen.render(RubyEnrichmentStationScreen.java:47) ~[%23188!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:436) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:429) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:896) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1112) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:697) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.run(Main.java:212) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19.1-42.0.9.jar%2395!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraftforge.items.ItemStackHandler.validateSlotIndex(ItemStackHandler.java:206) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.items.ItemStackHandler.getStackInSlot(ItemStackHandler.java:58) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.items.SlotItemHandler.getItem(SlotItemHandler.java:40) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderSlot(AbstractContainerScreen.java:202) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:108) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ManiDev.RubyItems.block.screen.RubyEnrichmentStationScreen.render(RubyEnrichmentStationScreen.java:47) ~[%23188!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:436) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:429) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23182%23189!/:?] {re:classloading}
+-- Screen render details --
+Details:
+	Screen name: com.ManiDev.RubyItems.block.screen.RubyEnrichmentStationScreen
+	Mouse location: Scaled: (320, 166). Absolute: (960.000000, 499.000000)
+	Screen size: Scaled: (640, 333). Absolute: (1920, 998). Scale factor of 3.000000
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:896) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1112) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:697) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.run(Main.java:212) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19.1-42.0.9.jar%2395!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/2, l='ClientLevel', x=56.56, y=71.00, z=47.31]]
+	Chunk stats: 121, 57
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (48,64,43), Section: (at 0,0,11 in 3,4,2; chunk contains blocks 48,-64,32 to 63,319,47), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 1497 game time, 1497 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.ClientLevel.fillReportDetails(ClientLevel.java:449) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.fillReport(Minecraft.java:2276) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:714) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.run(Main.java:212) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-1.19.1-42.0.9_mapped_official_1.19.1.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19.1-42.0.9.jar%2395!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23108!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Mod Resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.1
+	Minecraft Version ID: 1.19.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 287344776 bytes (274 MiB) / 858783744 bytes (819 MiB) up to 2126512128 bytes (2028 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz
+	Identifier: Intel64 Family 6 Model 142 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.30
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: Intel(R) HD Graphics 620
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x5916
+	Graphics card #0 versionInfo: DriverVersion=30.0.101.1340
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 32684.91
+	Virtual memory used (MB): 12527.44
+	Swap memory total (MB): 24576.00
+	Swap memory used (MB): 1493.27
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: Intel(R) HD Graphics 620 GL version 3.2.0 - Build 30.0.101.1340, Intel
+	Window size: 1920x998
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 4x Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/2, l='ServerLevel[New World]', x=56.56, y=71.00, z=47.31]]
+	Data Packs: vanilla, mod:forge, mod:rubyitems
+	World Generation: Experimental
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.0.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.1-42.0.9.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.1-42.0.9.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.1-42.0.9.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.1-42.0.9.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.1-42.0.9.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.1-42.0.9_mapped_official_1.19.1.jar    |Minecraft                     |minecraft                     |1.19.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |42.0.9              |DONE      |Manifest: NOSIGNATURE
+		main                                              |Ruby Items                    |rubyitems                     |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 7689aea7-0a4b-4cb0-ae6b-66f0f217f1fa
+	FML: 42.0
+	Forge: net.minecraftforge:42.0.9

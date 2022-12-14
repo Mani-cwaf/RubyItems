@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_mirrored",
+    "pattern": [
+        " r ",
+        " r ",
+        " s "
+    ],
+    "key": {
+        "r": {
+            "item": "rubyitems:ruby"
+        },
+        "s": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rubyitems:ruby_sword"
+    }
+}

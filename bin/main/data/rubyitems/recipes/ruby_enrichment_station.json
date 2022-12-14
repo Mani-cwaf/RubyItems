@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ruby_enrichment_station",
+    "pattern": [
+        "lgl",
+        "iii",
+        "s s"
+    ],
+    "key": {
+        "s": {
+            "item": "minecraft:stone"
+        },
+        "l": {
+            "item": "minecraft:stone_slab"
+        },
+        "g": {
+            "item": "minecraft:glass"
+        },
+        "i": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "rubyitems:ruby_enrichment_station"
+    }
+}

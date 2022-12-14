@@ -1,0 +1,25 @@
+{
+    "block.rubyitems.ruby_enrichment_station": "Ruby Enrichment Station",
+    "block.rubyitems.ruby_block": "Ruby Block",
+    "block.rubyitems.ruby_ore": "Ruby Ore",
+    "block.rubyitems.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "block.rubyitems.nether_ruby_ore": "Nether Ruby Ore",
+    "block.rubyitems.end_ruby_ore": "End Ruby Ore",
+
+    "item.rubyitems.raw_ruby": "Raw Ruby",
+    "item.rubyitems.ruby": "Ruby",
+    "item.rubyitems.ruby_matter_core": "Ruby Matter Core",
+
+    "item.rubyitems.ruby_helmet": "Ruby Helmet",
+    "item.rubyitems.ruby_chestplate": "Ruby Chestplate",
+    "item.rubyitems.ruby_leggings": "Ruby Leggings",
+    "item.rubyitems.ruby_boots": "Ruby Boots",
+
+    "item.rubyitems.ruby_sword": "Ruby Sword",
+    "item.rubyitems.ruby_pickaxe": "Ruby Pickaxe",
+    "item.rubyitems.ruby_axe": "Ruby Axe",
+    "item.rubyitems.ruby_shovel": "Ruby Shovel",
+    "item.rubyitems.ruby_hoe": "Ruby Hoe",
+
+    "itemGroup.rubyitemstab": "Ruby Items"
+}
